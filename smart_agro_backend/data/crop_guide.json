@@ -1,0 +1,49 @@
+[
+{"crop":"Rice","soil":["Clay Soil"],"season":["Kharif"],"climate":["Humid"],"tips":"Needs standing water and high rainfall.","water":"High irrigation required","temperature":"20-35°C","duration":"120-150 days","fertilizer":"Nitrogen rich fertilizer","yield":"4-6 tons/hectare"},
+{"crop":"Sugarcane","soil":["Clay Soil"],"season":["Kharif"],"climate":["Warm"],"tips":"Requires fertile soil and irrigation.","water":"Very high water requirement","temperature":"20-38°C","duration":"10-12 months","fertilizer":"NPK fertilizer","yield":"60-80 tons/hectare"},
+{"crop":"Peas","soil":["Clay Soil"],"season":["Kharif"],"climate":["Cool"],"tips":"Grows well in moist clay soil.","water":"Moderate irrigation","temperature":"10-25°C","duration":"60-80 days","fertilizer":"Phosphorus fertilizer","yield":"2-3 tons/hectare"},
+
+{"crop":"Wheat","soil":["Clay Soil"],"season":["Rabi"],"climate":["Cool"],"tips":"Needs cool weather and moderate irrigation.","water":"Moderate irrigation","temperature":"10-25°C","duration":"110-130 days","fertilizer":"Nitrogen fertilizer","yield":"3-5 tons/hectare"},
+{"crop":"Mustard","soil":["Clay Soil"],"season":["Rabi"],"climate":["Warm"],"tips":"Requires sunlight and fertile soil.","water":"Low irrigation","temperature":"15-30°C","duration":"90-110 days","fertilizer":"NPK fertilizer","yield":"1.5-2 tons/hectare"},
+{"crop":"Barley","soil":["Clay Soil"],"season":["Rabi"],"climate":["Humid"],"tips":"Tolerates moderate moisture.","water":"Moderate irrigation","temperature":"12-25°C","duration":"90-100 days","fertilizer":"Nitrogen fertilizer","yield":"2-4 tons/hectare"},
+
+{"crop":"Spinach","soil":["Clay Soil"],"season":["Zaid"],"climate":["Cool"],"tips":"Grows well in cool temperatures.","water":"Frequent light irrigation","temperature":"10-20°C","duration":"35-45 days","fertilizer":"Organic compost","yield":"8-10 tons/hectare"},
+{"crop":"Cucumber","soil":["Clay Soil"],"season":["Zaid"],"climate":["Warm"],"tips":"Needs warm temperature and moisture.","water":"Moderate irrigation","temperature":"18-30°C","duration":"50-70 days","fertilizer":"Potassium fertilizer","yield":"10-12 tons/hectare"},
+{"crop":"Bottle Gourd","soil":["Clay Soil"],"season":["Zaid"],"climate":["Humid"],"tips":"Prefers moist soil and warm climate.","water":"Moderate irrigation","temperature":"20-30°C","duration":"60-70 days","fertilizer":"Organic manure","yield":"15-20 tons/hectare"},
+
+{"crop":"Groundnut","soil":["Sandy Soil"],"season":["Kharif"],"climate":["Warm"],"tips":"Needs loose sandy soil.","water":"Moderate irrigation","temperature":"20-30°C","duration":"100-120 days","fertilizer":"Gypsum and phosphorus","yield":"2-3 tons/hectare"},
+{"crop":"Watermelon","soil":["Sandy Soil"],"season":["Kharif"],"climate":["Humid"],"tips":"Requires warm climate and drainage.","water":"Moderate irrigation","temperature":"20-35°C","duration":"80-100 days","fertilizer":"Potassium fertilizer","yield":"20-25 tons/hectare"},
+{"crop":"Millet","soil":["Sandy Soil"],"season":["Kharif"],"climate":["Cool"],"tips":"Drought tolerant crop.","water":"Low irrigation","temperature":"20-30°C","duration":"70-90 days","fertilizer":"Nitrogen fertilizer","yield":"1-2 tons/hectare"},
+
+{"crop":"Chickpea","soil":["Sandy Soil"],"season":["Rabi"],"climate":["Cool"],"tips":"Requires dry cool climate.","water":"Low irrigation","temperature":"15-25°C","duration":"90-110 days","fertilizer":"Phosphorus fertilizer","yield":"1.5-2 tons/hectare"},
+{"crop":"Sunflower","soil":["Sandy Soil"],"season":["Rabi"],"climate":["Warm"],"tips":"Needs full sunlight.","water":"Moderate irrigation","temperature":"18-30°C","duration":"90-110 days","fertilizer":"NPK fertilizer","yield":"1.5-2 tons/hectare"},
+{"crop":"Garlic","soil":["Sandy Soil"],"season":["Rabi"],"climate":["Humid"],"tips":"Needs well drained soil.","water":"Moderate irrigation","temperature":"12-24°C","duration":"150-180 days","fertilizer":"Organic manure","yield":"6-8 tons/hectare"},
+
+{"crop":"Radish","soil":["Sandy Soil"],"season":["Zaid"],"climate":["Cool"],"tips":"Fast growing crop.","water":"Frequent irrigation","temperature":"10-25°C","duration":"30-40 days","fertilizer":"Organic compost","yield":"15-20 tons/hectare"},
+{"crop":"Muskmelon","soil":["Sandy Soil"],"season":["Zaid"],"climate":["Warm"],"tips":"Needs sandy soil and heat.","water":"Moderate irrigation","temperature":"20-35°C","duration":"80-100 days","fertilizer":"Potassium fertilizer","yield":"12-15 tons/hectare"},
+{"crop":"Bottle Gourd","soil":["Sandy Soil"],"season":["Zaid"],"climate":["Humid"],"tips":"Needs moisture and sunlight.","water":"Moderate irrigation","temperature":"20-30°C","duration":"60-70 days","fertilizer":"Organic manure","yield":"15-20 tons/hectare"},
+
+{"crop":"Maize","soil":["Loamy Soil"],"season":["Kharif"],"climate":["Warm"],"tips":"Needs fertile well drained soil.","water":"Moderate irrigation","temperature":"18-32°C","duration":"90-110 days","fertilizer":"Nitrogen fertilizer","yield":"4-6 tons/hectare"},
+{"crop":"Soybean","soil":["Loamy Soil"],"season":["Kharif"],"climate":["Humid"],"tips":"Requires moderate rainfall.","water":"Moderate irrigation","temperature":"20-30°C","duration":"100-120 days","fertilizer":"Phosphorus fertilizer","yield":"2-3 tons/hectare"},
+{"crop":"Sorghum","soil":["Loamy Soil"],"season":["Kharif"],"climate":["Cool"],"tips":"Tolerates moderate climate.","water":"Low irrigation","temperature":"20-30°C","duration":"90-100 days","fertilizer":"Nitrogen fertilizer","yield":"2-3 tons/hectare"},
+
+{"crop":"Wheat","soil":["Loamy Soil"],"season":["Rabi"],"climate":["Cool"],"tips":"Best in fertile loamy soil.","water":"Moderate irrigation","temperature":"10-25°C","duration":"110-130 days","fertilizer":"Nitrogen fertilizer","yield":"3-5 tons/hectare"},
+{"crop":"Potato","soil":["Loamy Soil"],"season":["Rabi"],"climate":["Humid"],"tips":"Needs fertile loose soil.","water":"Frequent irrigation","temperature":"15-25°C","duration":"90-120 days","fertilizer":"Potassium fertilizer","yield":"20-30 tons/hectare"},
+{"crop":"Mustard","soil":["Loamy Soil"],"season":["Rabi"],"climate":["Warm"],"tips":"Needs sunlight and nutrients.","water":"Low irrigation","temperature":"15-30°C","duration":"90-110 days","fertilizer":"NPK fertilizer","yield":"1.5-2 tons/hectare"},
+
+{"crop":"Carrot","soil":["Loamy Soil"],"season":["Zaid"],"climate":["Cool"],"tips":"Needs loose fertile soil.","water":"Moderate irrigation","temperature":"10-25°C","duration":"70-80 days","fertilizer":"Organic manure","yield":"20-25 tons/hectare"},
+{"crop":"Tomato","soil":["Loamy Soil"],"season":["Zaid"],"climate":["Warm"],"tips":"Needs irrigation and sunlight.","water":"Moderate irrigation","temperature":"18-30°C","duration":"90-120 days","fertilizer":"NPK fertilizer","yield":"25-35 tons/hectare"},
+{"crop":"Okra","soil":["Loamy Soil"],"season":["Zaid"],"climate":["Humid"],"tips":"Grows well in warm humid climate.","water":"Moderate irrigation","temperature":"20-35°C","duration":"50-60 days","fertilizer":"Nitrogen fertilizer","yield":"10-12 tons/hectare"},
+
+{"crop":"Rice","soil":["Silt Soil"],"season":["Kharif"],"climate":["Humid"],"tips":"Needs water retaining soil.","water":"High irrigation","temperature":"20-35°C","duration":"120-150 days","fertilizer":"Nitrogen fertilizer","yield":"4-6 tons/hectare"},
+{"crop":"Jute","soil":["Silt Soil"],"season":["Kharif"],"climate":["Warm"],"tips":"Requires warm humid climate.","water":"High rainfall","temperature":"24-35°C","duration":"120-140 days","fertilizer":"Organic manure","yield":"2-3 tons/hectare"},
+{"crop":"Lentil","soil":["Silt Soil"],"season":["Kharif"],"climate":["Cool"],"tips":"Prefers moderate climate.","water":"Low irrigation","temperature":"15-25°C","duration":"100-110 days","fertilizer":"Phosphorus fertilizer","yield":"1-1.5 tons/hectare"},
+
+{"crop":"Wheat","soil":["Silt Soil"],"season":["Rabi"],"climate":["Cool"],"tips":"Needs fertile soil.","water":"Moderate irrigation","temperature":"10-25°C","duration":"110-130 days","fertilizer":"Nitrogen fertilizer","yield":"3-5 tons/hectare"},
+{"crop":"Onion","soil":["Silt Soil"],"season":["Rabi"],"climate":["Warm"],"tips":"Needs good drainage.","water":"Moderate irrigation","temperature":"13-24°C","duration":"120-150 days","fertilizer":"NPK fertilizer","yield":"15-20 tons/hectare"},
+{"crop":"Garlic","soil":["Silt Soil"],"season":["Rabi"],"climate":["Humid"],"tips":"Needs moderate moisture.","water":"Moderate irrigation","temperature":"12-24°C","duration":"150-180 days","fertilizer":"Organic manure","yield":"6-8 tons/hectare"},
+
+{"crop":"Beetroot","soil":["Silt Soil"],"season":["Zaid"],"climate":["Cool"],"tips":"Needs fertile soil.","water":"Moderate irrigation","temperature":"10-25°C","duration":"60-70 days","fertilizer":"Organic compost","yield":"20-25 tons/hectare"},
+{"crop":"Pumpkin","soil":["Silt Soil"],"season":["Zaid"],"climate":["Warm"],"tips":"Needs sunlight and space.","water":"Moderate irrigation","temperature":"20-30°C","duration":"90-120 days","fertilizer":"Organic manure","yield":"20-30 tons/hectare"},
+{"crop":"Cucumber","soil":["Silt Soil"],"season":["Zaid"],"climate":["Humid"],"tips":"Needs moisture rich soil.","water":"Moderate irrigation","temperature":"18-30°C","duration":"50-70 days","fertilizer":"Potassium fertilizer","yield":"10-12 tons/hectare"}
+]

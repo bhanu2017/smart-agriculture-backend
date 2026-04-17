@@ -1,0 +1,116 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Prices</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body data-voice="Market prices. Select crop and market to view prices." class="bg-green-50 pb-24">
+
+<!-- Header -->
+
+<div class="bg-white p-4 shadow flex justify-between items-center">
+  <h1 class="font-bold text-green-700">📊 Market Prices</h1>
+</div>
+
+<div class="max-w-xl mx-auto p-4">
+
+  <!-- Search Card -->
+
+  <div class="bg-white rounded-2xl shadow p-6">
+
+```
+<h2 class="text-lg font-semibold mb-4">
+  Check Mandi Prices
+</h2>
+
+<form method="POST" action="/market-price-result/" class="space-y-4">
+  {% csrf_token %}
+<input type="hidden" name="lang" id="langField">
+  <!-- Crop -->
+  <select name="crop" required
+    class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-green-500">
+    <option value="">Select Crop</option>
+    <option>Rice</option>
+    <option>Wheat</option>
+    <option>Maize</option>
+  </select>
+
+  <!-- Market -->
+  <select name="market" required
+    class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-green-500">
+    <option value="">Select Market</option>
+    <option>Hyderabad</option>
+    <option>Delhi</option>
+    <option>Warangal</option>
+  </select>
+
+  <button
+    type="submit"
+    class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold">
+    🔍 Get Prices
+  </button>
+</form>
+```
+
+  </div>
+
+  <!-- Result -->
+
+{% if result %}
+
+  <div class="bg-white rounded-2xl shadow p-6 mt-6">
+
+```
+<h3 class="text-xl font-bold text-green-700 mb-4">
+  {{ crop }} — {{ market }}
+</h3>
+
+<div class="grid grid-cols-3 gap-4 text-center">
+
+  <div class="bg-green-50 rounded-xl p-3">
+    <p class="text-xs text-gray-500">Min Price</p>
+    <p class="font-bold">₹{{ result.min_price }}</p>
+  </div>
+
+  <div class="bg-green-100 rounded-xl p-3">
+    <p class="text-xs text-gray-500">Modal Price</p>
+    <p class="font-bold text-green-700">₹{{ result.modal_price }}</p>
+  </div>
+
+  <div class="bg-green-50 rounded-xl p-3">
+    <p class="text-xs text-gray-500">Max Price</p>
+    <p class="font-bold">₹{{ result.max_price }}</p>
+  </div>
+
+</div>
+```
+{% else %}
+
+  <div class="bg-green-50 rounded-xl p-3"></div><p class="text-center text-gray-500 mt-4"><b>No market price data available for the selected crop and market.</b></p></div>
+  </div>
+  {% endif %}
+
+</div>
+
+{% include 'components/bottom-nav.html' %}
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+const lang = localStorage.getItem("lang") || "en";
+
+const field = document.getElementById("langField");
+
+if(field){
+field.value = lang;
+}
+
+});
+</script>
+</body>
+</html>

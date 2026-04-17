@@ -1,0 +1,405 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Smart Agro Home</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="{% static 'js/voice.js' %}"></script>
+
+<style>
+.card-hover{
+transition: all 0.25s ease;
+}
+
+.card-hover:hover{
+transform: translateY(-6px) scale(1.02);
+}
+</style>
+</head>
+
+
+<body data-voice="Hello Farmer. Welcome to Smart Agro Assistant.
+Ask me about crops, plant diseases, pesticides, or market prices."
+class="bg-gradient-to-br from-green-50 to-emerald-100 min-h-screen">
+
+<!-- ================= NAVBAR ================= -->
+
+<!-- ================= NAVBAR ================= -->
+
+<div class="bg-gray/90 backdrop-blur shadow-md px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+
+<h1 class="font-bold text-4xl text-green-700 flex items-center gap-2">
+🌳 Smart Agro Voice Assistant
+</h1>
+
+<div class="flex gap-3">
+
+<button id="voiceBtn"
+onclick="startVoiceCommand()"
+class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-xl shadow-md font-semibold">
+
+<span id="voiceBtnText">🎤 Speak Command</span>
+
+</button>
+
+<button onclick="logoutUser()"
+class="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-xl shadow-md font-semibold">
+
+🚪 Logout
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= HERO ================= -->
+
+<div class="px-6 py-8">
+
+<div class="relative rounded-3xl overflow-hidden shadow-xl">
+
+<img src="{% static 'images/farm-banner.jpg' %}"
+class="w-full h-[260px] md:h-[320px] object-cover">
+
+<div class="absolute inset-0 bg-gradient-to-r from-green-900/70 to-green-600/40"></div>
+
+<div class="absolute inset-0 flex flex-col justify-center px-8 text-white">
+
+<h2 id="greetingText"
+class="text-3xl md:text-4xl font-bold mb-2">
+Welcome Farmer 👋
+</h2>
+
+<p class="text-lg opacity-90 max-w-xl">
+Smart AI-powered farming assistant to improve your crop yield,
+detect diseases, and track market prices.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- ================= FEATURES ================= -->
+
+<div class="px-6 py-8">
+
+<h3 class="text-2xl font-bold text-gray-700 mb-6">
+🚀 Smart Features
+</h3>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+<a href="/leaf-detection/"
+class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-green-100">
+
+<div class="text-4xl mb-3">🍃</div>
+
+<h4 class="font-bold text-lg">Leaf Detection</h4>
+
+<p class="text-sm text-gray-500 mt-1">
+AI-powered disease detection.
+</p>
+
+</a>
+
+
+<a href="/crop-guide/"
+class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-green-100">
+
+<div class="text-4xl mb-3">🌾</div>
+
+<h4 class="font-bold text-lg">Crop Guide</h4>
+
+<p class="text-sm text-gray-500 mt-1">
+Get crop recommendations and farming tips.
+</p>
+
+</a>
+
+
+
+<a href="/pesticide-scanner/"
+class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-green-100">
+
+<div class="text-4xl mb-3">🧪</div>
+
+<h4 class="font-bold text-lg">Pesticide Scanner</h4>
+
+<p class="text-sm text-gray-500 mt-1">
+Detect harmful chemicals instantly.
+</p>
+
+</a>
+
+
+
+<a href="/market-price/"
+class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-green-100">
+
+<div class="text-4xl mb-3">📊</div>
+
+<h4 class="font-bold text-lg">Market Price</h4>
+
+<p class="text-sm text-gray-500 mt-1">
+Live mandi prices and trends.
+</p>
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<hr class="border-green-200 my-8 mx-6">
+
+<!-- ================= FARMING TIPS ================= -->
+
+<div class="px-6 py-8">
+
+<h3 class="text-2xl font-bold text-gray-700 mb-6">
+🌱 Smart Farming Tips
+</h3>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<!-- Tip 1 -->
+
+<div class="bg-white p-6 rounded-xl shadow border border-green-100 cursor-pointer"
+onclick="toggleTip('tip1')">
+
+<h4 class="font-semibold text-green-700 mb-2">
+🌾 Crop Rotation
+</h4>
+
+<p class="text-sm text-gray-500">
+Rotating crops improves soil fertility and reduces pest attacks.
+</p>
+
+<div id="tip1" class="hidden mt-3 text-sm text-gray-600">
+
+<b>More Information:</b>
+
+<ul class="list-disc pl-5 mt-2 space-y-1">
+
+<li>Plant different crops each season.</li>
+<li>Helps maintain soil nutrients.</li>
+<li>Reduces pest and disease buildup.</li>
+<li>Example: Rice → Legumes → Vegetables.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<!-- Tip 2 -->
+
+<div class="bg-white p-6 rounded-xl shadow border border-green-100 cursor-pointer"
+onclick="toggleTip('tip2')">
+
+<h4 class="font-semibold text-green-700 mb-2">
+💧 Smart Irrigation
+</h4>
+
+<p class="text-sm text-gray-500">
+Use drip irrigation to save water and improve crop growth.
+</p>
+
+<div id="tip2" class="hidden mt-3 text-sm text-gray-600">
+
+<b>More Information:</b>
+
+<ul class="list-disc pl-5 mt-2 space-y-1">
+
+<li>Drip irrigation reduces water waste.</li>
+<li>Water goes directly to plant roots.</li>
+<li>Improves crop yield and growth.</li>
+<li>Useful in water-scarce regions.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<!-- Tip 3 -->
+
+<div class="bg-white p-6 rounded-xl shadow border border-green-100 cursor-pointer"
+onclick="toggleTip('tip3')">
+
+<h4 class="font-semibold text-green-700 mb-2">
+🧪 Disease Monitoring
+</h4>
+
+<p class="text-sm text-gray-500">
+Regularly check plant leaves to detect diseases early.
+</p>
+
+<div id="tip3" class="hidden mt-3 text-sm text-gray-600">
+
+<b>More Information:</b>
+
+<ul class="list-disc pl-5 mt-2 space-y-1">
+
+<li>Check leaves weekly for spots or discoloration.</li>
+<li>Use AI leaf detection tools.</li>
+<li>Remove infected plants quickly.</li>
+<li>Apply recommended pesticides if needed.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= STATS SECTION ================= -->
+
+<div class="px-6 py-4">
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+<div class="bg-white p-6 rounded-xl shadow border border-green-100">
+<h3 class="text-3xl font-bold text-green-700">25+</h3>
+<p class="text-gray-500 text-sm mt-1">Supported Crops</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow border border-green-100">
+<h3 class="text-3xl font-bold text-green-700">10K+</h3>
+<p class="text-gray-500 text-sm mt-1">Farmers Helped</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow border border-green-100">
+<h3 class="text-3xl font-bold text-green-700">95%</h3>
+<p class="text-gray-500 text-sm mt-1">Disease Detection Accuracy</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow border border-green-100">
+<h3 class="text-3xl font-bold text-green-700">24/7</h3>
+<p class="text-gray-500 text-sm mt-1">AI Assistance</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+<hr class="border-green-200 my-8 mx-6">
+
+
+
+<!-- ================= WHY SMART AGRO ================= -->
+
+<div class="px-6 py-12 bg-white mt-10">
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+<img src="{% static 'images/image.png' %}"
+class="rounded-2xl shadow-lg">
+
+<div>
+
+<h3 class="text-3xl font-bold text-green-700 mb-4">
+Why Smart Agro?
+</h3>
+
+<p class="text-gray-600 mb-4">
+Smart Agro Assistant uses Artificial Intelligence to help farmers
+make better farming decisions, detect crop diseases, and monitor
+real-time market prices.
+</p>
+
+<ul class="space-y-2 text-gray-600">
+
+<li>✅ AI Crop Recommendations</li>
+<li>✅ Instant Leaf Disease Detection</li>
+<li>✅ Safe Pesticide Identification</li>
+<li>✅ Live Market Price Updates</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-green-900 text-white text-center py-6 mt-10">
+
+<p class="text-sm opacity-80">
+© 2026 Smart Agro Assistant • Built with AI for Farmers 🌱
+</p>
+
+</footer>
+
+
+
+<script>
+
+function updateGreeting(){
+
+const hour = new Date().getHours();
+
+let greeting = "Good Evening";
+
+if(hour < 10) greeting = "Good Morning";
+
+else if(hour < 15) greeting = "Good Afternoon";
+
+else greeting = "Good Evening";
+
+document.getElementById("greetingText").innerText =
+greeting + ", Farmer 👋";
+
+}
+
+updateGreeting();
+
+</script>
+<script>
+
+function toggleTip(id){
+
+const element = document.getElementById(id);
+
+element.classList.toggle("hidden");
+
+}
+
+function logoutUser(){
+
+if(confirm("Are you sure you want to logout?")){
+
+localStorage.clear();
+sessionStorage.clear();
+window.location.href = "{% url 'login' %}";}
+
+}
+
+</script>
+
+</body>
+</html>

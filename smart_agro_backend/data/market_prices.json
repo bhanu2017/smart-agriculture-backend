@@ -1,0 +1,65 @@
+[
+  {
+    "crop": "Rice",
+    "market": "Hyderabad",
+    "min_price": 2100,
+    "max_price": 2400,
+    "modal_price": 2250
+  },
+  {
+    "crop": "Wheat",
+    "market": "Delhi",
+    "min_price": 2000,
+    "max_price": 2300,
+    "modal_price": 2150
+  },
+  {
+    "crop": "Maize",
+    "market": "Warangal",
+    "min_price": 1800,
+    "max_price": 2100,
+    "modal_price": 1950
+  },
+  {
+    "crop": "Maize",
+    "market": "Delhi",
+    "min_price": 1500,
+    "max_price": 2400,
+    "modal_price": 2250
+  },
+  {
+    "crop": "Maize",
+    "market": "Hyderabad",
+    "min_price": 1100,
+    "max_price": 2200,
+    "modal_price": 1450
+  },
+  {
+    "crop": "Wheat",
+    "market": "Hyderabad",
+    "min_price": 1200,
+    "max_price": 2900,
+    "modal_price": 1750
+  },
+  {
+    "crop": "Rice",
+    "market": "Delhi",
+    "min_price": 2000,
+    "max_price": 2500,
+    "modal_price": 2250
+  },
+  {
+    "crop": "Rice",
+    "market": "Warangal",
+    "min_price": 1200,
+    "max_price": 2400,
+    "modal_price": 2150
+  },
+   {
+    "crop": "Wheat",
+    "market": "Warangal",
+    "min_price": 2000,
+    "max_price": 2300,
+    "modal_price": 2150
+   }
+]

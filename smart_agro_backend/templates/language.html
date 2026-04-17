@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Select Language</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-green-50 flex items-center justify-center h-screen">
+
+  <div class="bg-white p-8 rounded-2xl shadow-lg w-96 text-center">
+
+    <h2 class="text-2xl font-bold text-green-700 mb-6">
+      Select Language 🌍
+    </h2>
+
+    <div class="space-y-3">
+
+      <button onclick="selectLang('en')"
+        class="w-full p-3 bg-green-600 text-white rounded-lg">
+        English
+      </button>
+
+      <button onclick="selectLang('te')"
+        class="w-full p-3 bg-green-600 text-white rounded-lg">
+        Telugu
+      </button>
+
+      <button onclick="selectLang('hi')"
+        class="w-full p-3 bg-green-600 text-white rounded-lg">
+        Hindi
+      </button>
+
+    </div>
+
+  </div>
+
+<script>
+function selectLang(lang){
+  localStorage.setItem("lang", lang);
+  window.location.href = "/home/";
+}
+</script>
+
+</body>
+</html>

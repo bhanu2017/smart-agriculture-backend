@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django
+db.sqlite3
+*.log
+
+# Virtual environment
+venv/
+env/
+
+# OS files
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Static files (optional if large)
+staticfiles/
+
+# Media uploads
+media/
+
+# ML models (optional - large files)
+*.h5
+*.keras
+*.pkl

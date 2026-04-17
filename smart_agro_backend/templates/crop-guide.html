@@ -1,0 +1,302 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Crop Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="{% static 'js/voice.js' %}"></script>
+</head>
+
+<body data-voice="Crop selection guide. Please choose your soil,season, and climate types." class="bg-green-50 pb-24">
+
+<!-- Header -->
+
+<div class="bg-white p-4 shadow flex justify-between items-center">
+  <h1 class="font-bold text-green-700">🌾 Crop Selection Guide</h1>
+  <button onclick="speak('Select your soil type')" class="bg-green-600 text-white px-3 py-1 rounded">
+    🔊
+  </button>
+</div>
+
+<!-- Main Form -->
+
+<form method="POST" action="/crop-result/">
+{% csrf_token %}
+<input type="hidden" name="lang" id="langField">
+<div class="p-4">
+
+  <!-- Stepper -->
+
+  <div class="flex justify-between text-sm mb-6">
+    <span id="step1Label" class="font-bold text-green-700">1 Soil</span>
+    <span id="step2Label" class="text-gray-400">2 Season</span>
+    <span id="step3Label" class="text-gray-400">3 Climate</span>
+    <span id="step4Label" class="text-gray-400">4 Result</span>
+  </div>
+
+  <!-- STEP 1: SOIL -->
+
+  <div id="step1">
+    <h2 class="font-semibold mb-4">Select Your Soil Type</h2>
+
+```
+<div class="grid grid-cols-2 gap-4">
+
+  <label class="cursor-pointer">
+    <input type="radio" name="soil" value="Clay Soil" class="hidden" required>
+    <div class="soil-card bg-white p-4 rounded-xl shadow text-center">Clay Soil(Heavy, retains moisture)</div>
+  </label>
+
+  <label class="cursor-pointer">
+    <input type="radio" name="soil" value="Sandy Soil" class="hidden">
+    <div class="soil-card bg-white p-4 rounded-xl shadow text-center">Sandy Soil(Light, drains quickly)</div>
+  </label>
+
+  <label class="cursor-pointer">
+    <input type="radio" name="soil" value="Loamy Soil" class="hidden">
+    <div class="soil-card bg-white p-4 rounded-xl shadow text-center">Loamy Soil(Well-draining, fertile)</div>
+  </label>
+
+  <label class="cursor-pointer">
+    <input type="radio" name="soil" value="Silt Soil" class="hidden">
+    <div class="soil-card bg-white p-4 rounded-xl shadow text-center">Silt Soil(Intermediate texture, retains moisture well)</div>
+  </label>
+
+</div>
+
+<button type="button" onclick="nextStep(2)" class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg">
+  Next →
+</button>
+```
+
+  </div>
+
+  <!-- STEP 2: SEASON -->
+
+  <div id="step2" class="hidden">
+    <h2 class="font-semibold mb-4">Select Season</h2>
+
+```
+<div class="grid grid-cols-2 gap-4">
+
+  <label class="cursor-pointer">
+    <input type="radio" name="season" value="Kharif" class="hidden" required>
+    <div class="season-card bg-white p-4 rounded-xl shadow text-center">Kharif(Rainy Season)</div>
+  </label>
+
+  <label class="cursor-pointer">
+    <input type="radio" name="season" value="Rabi" class="hidden">
+    <div class="season-card bg-white p-4 rounded-xl shadow text-center">Rabi(Winter Season)</div>
+  </label>
+
+  <label class="cursor-pointer col-span-2">
+    <input type="radio" name="season" value="Zaid" class="hidden">
+    <div class="season-card bg-white p-4 rounded-xl shadow text-center">Zaid(Summer Season)</div>
+  </label>
+
+</div>
+
+<div class="flex gap-3 mt-6">
+  <button type="button" onclick="nextStep(1)" class="w-1/2 bg-gray-300 py-2 rounded-lg">
+    ← Back
+  </button>
+  <button type="button" onclick="nextStep(3)" class="w-1/2 bg-green-600 text-white py-2 rounded-lg">
+    Next →
+  </button>
+</div>
+```
+
+  </div>
+
+  <!-- STEP 3: CLIMATE -->
+
+  <div id="step3" class="hidden">
+    <h2 class="font-semibold mb-4">Select Climate</h2>
+
+```
+<div class="grid grid-cols-2 gap-4">
+
+  <label class="cursor-pointer">
+    <input type="radio" name="climate" value="Warm" class="hidden" required>
+    <div class="climate-card bg-white p-4 rounded-xl shadow text-center">Warm(Consistent temperatures, high humidity)</div>
+  </label>
+
+  <label class="cursor-pointer">
+    <input type="radio" name="climate" value="Cool" class="hidden">
+    <div class="climate-card bg-white p-4 rounded-xl shadow text-center">Cool(Seasonal variations, moderate humidity)</div>
+  </label>
+
+  <label class="cursor-pointer col-span-2">
+    <input type="radio" name="climate" value="Humid" class="hidden">
+    <div class="climate-card bg-white p-4 rounded-xl shadow text-center">Humid(High moisture content, warm temperatures)</div>
+  </label>
+
+</div>
+
+<div class="flex gap-3 mt-6">
+  <button type="button" onclick="nextStep(2)" class="w-1/2 bg-gray-300 py-2 rounded-lg">
+    ← Back
+  </button>
+  <button type="submit" class="w-1/2 bg-green-700 text-white py-2 rounded-lg">
+    🌾 Get Recommendation
+  </button>
+</div>
+```
+
+  </div>
+
+</div>
+</form>
+
+<!-- RESULTS -->
+
+{% if results %}
+
+<div class="p-4">
+  <div class="bg-white rounded-xl shadow p-4">
+    <h1 class="font-bold text-green-700 mb-3">🌾 Recommended Crops</h1>
+
+{% for crop in results %}
+
+<div class="bg-white rounded-xl shadow p-4 mb-4">
+
+<h1 class="text-lg font-bold text-green-700">
+🌾 {{ crop.crop }}
+</h1>
+
+<p class="text-gray-600 mt-1">
+<strong>Tips:</strong> {{ crop.tips }}
+</p>
+
+<div class="grid grid-cols-2 gap-2 mt-3 text-sm">
+
+<p>💧 <b>Water:</b> {{ crop.water }}</p>
+
+<p>🌡 <b>Temperature:</b> {{ crop.temperature }}</p>
+
+<p>⏳ <b>Duration:</b> {{ crop.duration }}</p>
+
+<p>🧪 <b>Fertilizer:</b> {{ crop.fertilizer }}</p>
+
+<p class="col-span-2">🌾 <b>Expected Yield:</b> {{ crop.yield }}</p>
+
+</div>
+
+</div>
+
+{% endfor %}
+{% else %}
+  <div class="bg-green-50 rounded-xl p-4 text-center">
+    <p class="text-gray-500"><b>No crop recommendations available for the selected criteria.</b></p>
+
+  </div>
+</div>
+{% endif %}
+
+<!-- Bottom Navigation -->
+
+{% include 'components/bottom-nav.html' %}
+
+<!-- Scripts -->
+
+<script>
+
+// STEP NAVIGATION
+function nextStep(step) {
+
+    const steps = ["step1","step2","step3"];
+
+    steps.forEach(s => {
+        document.getElementById(s).classList.add("hidden");
+    });
+
+    document.getElementById("step"+step).classList.remove("hidden");
+
+    // Update step labels
+    document.getElementById("step1Label").classList.remove("font-bold","text-green-700");
+    document.getElementById("step2Label").classList.remove("font-bold","text-green-700");
+    document.getElementById("step3Label").classList.remove("font-bold","text-green-700");
+
+    document.getElementById("step"+step+"Label").classList.add("font-bold","text-green-700");
+
+}
+
+
+// CARD SELECTION STYLE
+document.querySelectorAll(".soil-card").forEach(card => {
+
+    card.addEventListener("click", function(){
+
+        document.querySelectorAll(".soil-card").forEach(c=>{
+            c.classList.remove("border-4","border-green-600","bg-green-100");
+        });
+
+        this.classList.add("border-4","border-green-600","bg-green-100");
+
+    });
+
+});
+
+document.querySelectorAll(".season-card").forEach(card => {
+
+    card.addEventListener("click", function(){
+
+        document.querySelectorAll(".season-card").forEach(c=>{
+            c.classList.remove("border-4","border-green-600","bg-green-100");
+        });
+
+        this.classList.add("border-4","border-green-600","bg-green-100");
+
+    });
+
+});
+
+document.querySelectorAll(".climate-card").forEach(card => {
+
+    card.addEventListener("click", function(){
+
+        document.querySelectorAll(".climate-card").forEach(c=>{
+            c.classList.remove("border-4","border-green-600","bg-green-100");
+        });
+
+        this.classList.add("border-4","border-green-600","bg-green-100");
+
+    });
+
+});
+
+</script>
+<script>
+
+async function translatePage(){
+
+const lang = localStorage.getItem("lang") || "en";
+
+if(lang === "en") return;
+
+const elements = document.querySelectorAll("p, h2, h3, h4");
+
+for(const el of elements){
+
+const text = el.innerText.trim();
+
+if(text.length < 2) continue;
+
+const translated = await translateText(text);
+
+el.innerText = translated;
+
+}
+
+}
+
+translatePage();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,688 @@
+[
+  {
+    "name": "Acetamiprid",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic to bees",
+    "usage": "Controls aphids and whiteflies",
+    "status": "Allowed with restrictions"
+  },
+  {
+    "name": "Bifenthrin",
+    "safety": "Moderate",
+    "toxicity": "Highly toxic to aquatic organisms",
+    "usage": "Controls termites and chewing pests",
+    "status": "Allowed"
+  },
+  {
+    "name": "Indoxacarb",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic",
+    "usage": "Controls caterpillars and borers",
+    "status": "Allowed"
+  },
+  {
+    "name": "Chlorfenapyr",
+    "safety": "Moderate",
+    "toxicity": "Toxic to aquatic life",
+    "usage": "Controls resistant insect pests",
+    "status": "Restricted use"
+  },
+  {
+    "name": "Novaluron",
+    "safety": "Moderate",
+    "toxicity": "Low to mammals",
+    "usage": "Insect growth regulator for caterpillars",
+    "status": "Allowed"
+  },
+  {
+    "name": "Lufenuron",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls larvae and leaf miners",
+    "status": "Allowed"
+  },
+  {
+    "name": "Diflubenzuron",
+    "safety": "Moderate",
+    "toxicity": "Low to mammals, toxic to aquatic organisms",
+    "usage": "Insect growth regulator",
+    "status": "Allowed"
+  },
+  {
+    "name": "Pyriproxyfen",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls whiteflies and scale insects",
+    "status": "Allowed"
+  },
+  {
+    "name": "Diafenthiuron",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic",
+    "usage": "Controls sucking pests in cotton",
+    "status": "Allowed with caution"
+  },
+  {
+    "name": "Etofenprox",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls rice stem borers",
+    "status": "Allowed"
+  },
+  {
+    "name": "Fenvalerate",
+    "safety": "Moderate",
+    "toxicity": "Toxic to fish",
+    "usage": "Controls bollworms and caterpillars",
+    "status": "Restricted in some regions"
+  },
+  {
+    "name": "Deltamethrin",
+    "safety": "Moderate",
+    "toxicity": "Highly toxic to aquatic life",
+    "usage": "Broad spectrum insecticide",
+    "status": "Allowed"
+  },
+  {
+    "name": "Beta-cyfluthrin",
+    "safety": "Moderate",
+    "toxicity": "Toxic to bees and fish",
+    "usage": "Controls chewing pests",
+    "status": "Allowed with restrictions"
+  },
+  {
+    "name": "Flubendiamide",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls lepidopteran pests",
+    "status": "Restricted in some countries"
+  },
+  {
+    "name": "Tolfenpyrad",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic",
+    "usage": "Controls thrips and whiteflies",
+    "status": "Allowed"
+  },
+  {
+    "name": "Oxamyl",
+    "safety": "Low",
+    "toxicity": "Highly toxic",
+    "usage": "Controls nematodes and insects",
+    "status": "Restricted"
+  },
+  {
+    "name": "Carbosulfan",
+    "safety": "Low",
+    "toxicity": "Highly toxic",
+    "usage": "Soil insecticide",
+    "status": "Banned or restricted in many countries"
+  },
+  {
+    "name": "Fenitrothion",
+    "safety": "Low",
+    "toxicity": "Moderately hazardous",
+    "usage": "Controls storage pests",
+    "status": "Restricted"
+  },
+  {
+    "name": "Quinalphos",
+    "safety": "Low",
+    "toxicity": "Highly toxic",
+    "usage": "Controls sucking pests",
+    "status": "Restricted"
+  },
+  {
+    "name": "Propargite",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic",
+    "usage": "Controls mites",
+    "status": "Allowed with caution"
+  },
+  {
+    "name": "Abamectin",
+    "safety": "Moderate",
+    "toxicity": "Toxic to aquatic organisms",
+    "usage": "Controls mites and leaf miners",
+    "status": "Allowed"
+  },
+  {
+    "name": "Spiromesifen",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls mites and whiteflies",
+    "status": "Allowed"
+  },
+  {
+    "name": "Spirotetramat",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Systemic control of sucking pests",
+    "status": "Allowed"
+  },
+  {
+    "name": "Fenpyroximate",
+    "safety": "Moderate",
+    "toxicity": "Toxic to fish",
+    "usage": "Controls mites",
+    "status": "Allowed with restrictions"
+  },
+  {
+    "name": "Hexythiazox",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls mite eggs and larvae",
+    "status": "Allowed"
+  },
+  {
+    "name": "Captan",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Fungicide for fruit crops",
+    "status": "Allowed with regulation"
+  },
+  {
+    "name": "Thiram",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic",
+    "usage": "Seed treatment fungicide",
+    "status": "Restricted in some countries"
+  },
+  {
+    "name": "Ziram",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Fungicide for fruits and vegetables",
+    "status": "Restricted"
+  },
+  {
+    "name": "Iprodione",
+    "safety": "Moderate",
+    "toxicity": "Low to moderate toxicity",
+    "usage": "Controls fungal leaf spots",
+    "status": "Restricted in some regions"
+  },
+  {
+    "name": "Boscalid",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls mildew and blight",
+    "status": "Allowed"
+  },
+  {
+    "name": "Fluopyram",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Fungicide and nematicide",
+    "status": "Allowed"
+  },
+  {
+    "name": "Trifloxystrobin",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic to aquatic life",
+    "usage": "Controls rust and mildew",
+    "status": "Allowed"
+  },
+  {
+    "name": "Myclobutanil",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls powdery mildew",
+    "status": "Allowed"
+  },
+  {
+    "name": "Benomyl",
+    "safety": "Low",
+    "toxicity": "Moderate toxicity",
+    "usage": "Systemic fungicide",
+    "status": "Banned in many countries"
+  },
+  {
+    "name": "Fludioxonil",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Seed treatment fungicide",
+    "status": "Allowed"
+  },
+  {
+    "name": "Picoxystrobin",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls cereal diseases",
+    "status": "Allowed"
+  },
+  {
+    "name": "Clodinafop",
+    "safety": "Moderate",
+    "toxicity": "Low to moderate toxicity",
+    "usage": "Selective herbicide for grasses",
+    "status": "Allowed"
+  },
+  {
+    "name": "Halosulfuron",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Controls sedges in rice",
+    "status": "Allowed"
+  },
+  {
+    "name": "Imazethapyr",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls broadleaf weeds",
+    "status": "Allowed"
+  },
+  {
+    "name": "Imazapyr",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Non-selective weed control",
+    "status": "Restricted use"
+  },
+  {
+    "name": "Quizalofop",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Controls grassy weeds",
+    "status": "Allowed"
+  },
+  {
+    "name": "Fenoxaprop",
+    "safety": "Moderate",
+    "toxicity": "Low to moderate toxicity",
+    "usage": "Selective herbicide for wheat",
+    "status": "Allowed"
+  },
+  {
+    "name": "Clomazone",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Pre-emergent herbicide",
+    "status": "Allowed"
+  },
+  {
+    "name": "S-metolachlor",
+    "safety": "Moderate",
+    "toxicity": "Moderate aquatic toxicity",
+    "usage": "Controls annual grasses",
+    "status": "Allowed"
+  },
+  {
+    "name": "Isoproturon",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Selective herbicide in wheat",
+    "status": "Restricted in some regions"
+  },
+  {
+    "name": "Linuron",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Pre-emergent herbicide",
+    "status": "Restricted"
+  },
+  {
+    "name": "Molinate",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Herbicide for rice fields",
+    "status": "Restricted in some countries"
+  },
+  {
+    "name": "Bentazone",
+    "safety": "Moderate",
+    "toxicity": "Low to moderate toxicity",
+    "usage": "Controls broadleaf weeds",
+    "status": "Allowed"
+  },
+  {
+    "name": "Clethodim",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Selective grass herbicide",
+    "status": "Allowed"
+  },
+  {
+    "name": "Aldicarb",
+    "safety": "Very Low",
+    "toxicity": "Extremely toxic to humans and wildlife",
+    "usage": "Systemic insecticide and nematicide",
+    "status": "Banned or highly restricted in many countries"
+  },
+  {
+    "name": "Methomyl",
+    "safety": "Low",
+    "toxicity": "Highly toxic",
+    "usage": "Broad spectrum insecticide for field crops",
+    "status": "Restricted"
+  },
+  {
+    "name": "Carbofuran",
+    "safety": "Low",
+    "toxicity": "Highly toxic to birds and mammals",
+    "usage": "Soil insecticide and nematicide",
+    "status": "Banned or restricted in many regions"
+  },
+  {
+    "name": "Phorate",
+    "safety": "Very Low",
+    "toxicity": "Extremely hazardous organophosphate",
+    "usage": "Soil insecticide",
+    "status": "Banned or restricted"
+  },
+  {
+    "name": "Monocrotophos",
+    "safety": "Very Low",
+    "toxicity": "Highly toxic to humans",
+    "usage": "Insecticide for cotton and rice",
+    "status": "Banned on vegetables / Restricted"
+  },
+  {
+    "name": "Ethion",
+    "safety": "Low",
+    "toxicity": "Highly toxic",
+    "usage": "Controls mites and insects",
+    "status": "Restricted"
+  },
+  {
+    "name": "Chlorothalonil",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic to aquatic life",
+    "usage": "Fungicide for blight and leaf spots",
+    "status": "Restricted in some countries"
+  },
+  {
+    "name": "Metalaxyl",
+    "safety": "Moderate",
+    "toxicity": "Low to moderate toxicity",
+    "usage": "Controls downy mildew",
+    "status": "Allowed"
+  },
+  {
+    "name": "Fosetyl-Al",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Systemic fungicide for root diseases",
+    "status": "Allowed"
+  },
+  {
+    "name": "Cymoxanil",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Controls late blight",
+    "status": "Allowed"
+  },
+  {
+    "name": "Dimethomorph",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls downy mildew",
+    "status": "Allowed"
+  },
+  {
+    "name": "Famoxadone",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic to aquatic organisms",
+    "usage": "Fungicide for vegetable crops",
+    "status": "Allowed"
+  },
+  {
+    "name": "Cyazofamid",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls oomycete fungi",
+    "status": "Allowed"
+  },
+  {
+    "name": "Mandipropamid",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Controls downy mildew",
+    "status": "Allowed"
+  },
+  {
+    "name": "Flutriafol",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Controls rust diseases",
+    "status": "Allowed"
+  },
+  {
+    "name": "Triadimefon",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Controls powdery mildew",
+    "status": "Restricted in some regions"
+  },
+  {
+    "name": "Triadimenol",
+    "safety": "Moderate",
+    "toxicity": "Low to moderate toxicity",
+    "usage": "Seed treatment fungicide",
+    "status": "Allowed"
+  },
+  {
+    "name": "Fluazinam",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic to aquatic life",
+    "usage": "Controls potato blight",
+    "status": "Allowed"
+  },
+  {
+    "name": "Anilofos",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Herbicide for rice fields",
+    "status": "Restricted in some regions"
+  },
+  {
+    "name": "Thiobencarb",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Pre-emergent herbicide for rice",
+    "status": "Allowed"
+  },
+  {
+    "name": "Bensulfuron-methyl",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Controls broadleaf weeds in rice",
+    "status": "Allowed"
+  },
+  {
+    "name": "Pyrazosulfuron",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Selective herbicide in paddy",
+    "status": "Allowed"
+  },
+  {
+    "name": "Metsulfuron-methyl",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Controls broadleaf weeds",
+    "status": "Allowed"
+  },
+  {
+    "name": "Triclopyr",
+    "safety": "Moderate",
+    "toxicity": "Low to moderate toxicity",
+    "usage": "Controls woody weeds",
+    "status": "Allowed"
+  },
+  {
+    "name": "Diuron",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic to aquatic organisms",
+    "usage": "Non-selective herbicide",
+    "status": "Restricted in some countries"
+  },
+  {
+    "name": "Paraquat",
+    "safety": "Very Low",
+    "toxicity": "Highly toxic if ingested",
+    "usage": "Contact herbicide for weed control",
+    "status": "Banned or highly restricted"
+  },
+  {
+    "name": "Diquat",
+    "safety": "Low",
+    "toxicity": "Moderately to highly toxic",
+    "usage": "Non-selective herbicide",
+    "status": "Restricted"
+  },
+  {
+    "name": "Bromoxynil",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Post-emergent herbicide",
+    "status": "Restricted in some regions"
+  },
+  {
+    "name": "Oxadiazon",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic",
+    "usage": "Pre-emergent herbicide",
+    "status": "Allowed"
+  },
+  {
+    "name": "Terbuthylazine",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic",
+    "usage": "Controls annual grasses",
+    "status": "Restricted in some countries"
+  },
+  {
+    "name": "Ametryn",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Herbicide in sugarcane",
+    "status": "Allowed"
+  },
+  {
+    "name": "Prometryn",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Controls weeds in cotton",
+    "status": "Allowed"
+  },
+  {
+    "name": "Fluchloralin",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Pre-plant herbicide",
+    "status": "Restricted in some regions"
+  },
+  {
+    "name": "Alachlor",
+    "safety": "Low",
+    "toxicity": "Possible carcinogenic risk",
+    "usage": "Pre-emergent herbicide",
+    "status": "Banned or restricted in many countries"
+  },
+  {
+    "name": "Metolachlor",
+    "safety": "Moderate",
+    "toxicity": "Moderate aquatic toxicity",
+    "usage": "Controls grasses and broadleaf weeds",
+    "status": "Allowed"
+  },
+  {
+    "name": "Oxadiazole",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Herbicide for rice",
+    "status": "Allowed"
+  },
+  {
+    "name": "Flonicamid",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls aphids and sucking pests",
+    "status": "Allowed"
+  },
+  {
+    "name": "Pymetrozine",
+    "safety": "Moderate",
+    "toxicity": "Low mammalian toxicity",
+    "usage": "Controls planthoppers",
+    "status": "Allowed"
+  },
+  {
+    "name": "Dinotefuran",
+    "safety": "Moderate",
+    "toxicity": "Toxic to bees",
+    "usage": "Systemic insecticide",
+    "status": "Restricted in some regions"
+  },
+  {
+    "name": "Clothianidin",
+    "safety": "Moderate",
+    "toxicity": "Highly toxic to bees",
+    "usage": "Seed treatment insecticide",
+    "status": "Restricted in some countries"
+  },
+  {
+    "name": "Nitenpyram",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Controls sucking insects",
+    "status": "Allowed"
+  },
+  {
+    "name": "Thiacloprid",
+    "safety": "Moderate",
+    "toxicity": "Moderately toxic",
+    "usage": "Controls aphids and beetles",
+    "status": "Restricted in some regions"
+  },
+  {
+    "name": "Sulfoxaflor",
+    "safety": "Moderate",
+    "toxicity": "Toxic to bees",
+    "usage": "Controls sap-feeding insects",
+    "status": "Restricted use"
+  },
+  {
+    "name": "Flupyradifurone",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Systemic insecticide",
+    "status": "Allowed"
+  },
+  {
+    "name": "Tetraconazole",
+    "safety": "Moderate",
+    "toxicity": "Moderate toxicity",
+    "usage": "Fungicide for cereals",
+    "status": "Allowed"
+  },
+  {
+    "name": "Kresoxim-methyl",
+    "safety": "Moderate",
+    "toxicity": "Moderate aquatic toxicity",
+    "usage": "Controls powdery mildew",
+    "status": "Allowed"
+  },
+  {
+    "name": "Pencycuron",
+    "safety": "Moderate",
+    "toxicity": "Low toxicity",
+    "usage": "Controls Rhizoctonia diseases",
+    "status": "Allowed"
+  },
+  {
+    "name": "Validamycin",
+    "safety": "High",
+    "toxicity": "Low toxicity",
+    "usage": "Controls sheath blight in rice",
+    "status": "Allowed"
+  },
+  {
+    "name": "Kasugamycin",
+    "safety": "High",
+    "toxicity": "Low toxicity",
+    "usage": "Controls bacterial plant diseases",
+    "status": "Allowed"
+  }
+]
