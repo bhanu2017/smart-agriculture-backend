@@ -57,6 +57,28 @@ This system leverages **Artificial Intelligence** to provide real-time agricultu
 
 # 📸 Application Screenshots
 
+## 🔐 Signup Page
+
+![image alt](https://github.com/bhanu2017/smart-agriculture-backend/blob/9e54d7617654d37df7c3950ee46f57d35c2220b9/signup.png)
+
+Users can:
+- Register securely  
+- Create new accounts  
+
+---
+## 🔐 Login Page
+
+![image alt](https://github.com/bhanu2017/smart-agriculture-backend/blob/9e54d7617654d37df7c3950ee46f57d35c2220b9/login.png)
+
+Provides:
+- Secure login  
+- Access to personalized dashboard  
+
+---
+
+## Home Pages
+
+
 ---
 
 ## 🌿 Leaf Disease Detection
@@ -121,26 +143,6 @@ Highlights:
 - Supported crops  
 - Accuracy metrics  
 - AI assistance capabilities  
-
----
-
-## 🔐 Signup Page
-
-![Signup](Screenshot 2026-05-05 at 10.16.08 AM.png)
-
-Users can:
-- Register securely  
-- Create new accounts  
-
----
-
-## 🔐 Login Page
-
-![Login](Screenshot 2026-05-05 at 10.16.13 AM.png)
-
-Provides:
-- Secure login  
-- Access to personalized dashboard  
 
 ---
 
