@@ -76,14 +76,21 @@ Provides:
 
 ---
 
-## Home Pages
+## 🎤 Smart Agro Dashboard
 
+![image alt](https://github.com/bhanu2017/smart-agriculture-backend/blob/b42118ab8bec7f680e3415c763a7a6125515da10/homeheader.png)
+![image alt](https://github.com/bhanu2017/smart-agriculture-backend/blob/b42118ab8bec7f680e3415c763a7a6125515da10/homefooter.png)
+
+Main dashboard includes:
+- Voice assistant  
+- Feature navigation cards  
+- Smart farming overview  
 
 ---
 
 ## 🌿 Leaf Disease Detection
 
-![Leaf Detection](leaf detection(1).png)
+![image alt](https://github.com/bhanu2017/smart-agriculture-backend/blob/b42118ab8bec7f680e3415c763a7a6125515da10/leaf_detection.png)
 
 This feature allows users to:
 - Upload a leaf image  
@@ -94,7 +101,7 @@ This feature allows users to:
 
 ## 🌾 Crop Recommendation System
 
-![Crop Selection](crop selection(3).png)
+![image alt](https://github.com/bhanu2017/smart-agriculture-backend/blob/b42118ab8bec7f680e3415c763a7a6125515da10/crop_selection.png)
 
 Users can:
 - Select soil type  
@@ -105,7 +112,7 @@ Users can:
 
 ## 💰 Market Price Analysis
 
-![Market Price](marketprice(2).png)
+![image alt](https://github.com/bhanu2017/smart-agriculture-backend/blob/b42118ab8bec7f680e3415c763a7a6125515da10/marketprice.png)
 
 Displays:
 - Crop prices (Min / Max / Modal)  
@@ -115,23 +122,12 @@ Displays:
 
 ## 🧪 Pesticide Scanner
 
-![Pesticide Scanner](Pesticide Scanner(1).png)
+![image alt](https://github.com/bhanu2017/smart-agriculture-backend/blob/b42118ab8bec7f680e3415c763a7a6125515da10/Pesticide_Scanner.png)
 
 Allows users to:
 - Enter pesticide name  
 - View toxicity, safety, and usage  
 - Check regulatory status  
-
----
-
-## 🎤 Smart Agro Dashboard
-
-![Dashboard](Screenshot 2026-03-18 at 8.07.20 AM(1).png)
-
-Main dashboard includes:
-- Voice assistant  
-- Feature navigation cards  
-- Smart farming overview  
 
 ---
 
@@ -190,8 +186,7 @@ python smart_agro_backend/manage.py runserver
 ### Manual Setup
 
 Download:
-https://drive.google.com/uc?id=1OXtoxNMXVZ1pz96avInbV-Tx5DICJF17  
-
+https://colab.research.google.com/drive/1Zt1u7IGTUPQr29bVvSAWQ958PwlGuOl6?usp=share_link
 Place inside:
 
 ```
